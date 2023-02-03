@@ -32,6 +32,7 @@ def draw():
         ellipse(c.x, c.y, c.r, c.r)
 
     noLoop()
+    # save_frame("firstRun.png")
 
 
 def does_circle_have_collision(current_circle):
