@@ -19,7 +19,7 @@ def draw():
     global n, num_circles, init
 
     if init == num_circles:
-        saveCanvas("../images/sunflower.png")
+        saveCanvas("../images/phyllotaxis.png")
         exit()
 
     a = n * 137.5
