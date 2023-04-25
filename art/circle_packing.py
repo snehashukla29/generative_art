@@ -1,5 +1,5 @@
 import random
-from p5 import * 
+from p5 import *
 
 create_circle_attempts = 500
 num_circles = 500
@@ -19,7 +19,6 @@ def setup():
     fill(0, 110)
 
 
-
 def draw():
     global num_circles, all_circles
 
@@ -37,14 +36,13 @@ def draw():
 
 
 def does_circle_have_collision(current_circle):
-
     for c in all_circles:
         a = c.r + current_circle.r
         x = current_circle.x - c.x
         y = current_circle.y - c.y
 
         # if dist((current_circle.x, current_circle.y), (x, y)) < a:
-        if math.sqrt((x*x) + (y*y)) < a:
+        if math.sqrt((x * x) + (y * y)) < a:
             return True
 
     return False
@@ -57,7 +55,6 @@ def create_circle():
     new_circle = None
 
     for x in range(0, create_circle_attempts):
-
         x_coord = random.randint(0, canvas_h)
         y_coord = random.randint(0, canvas_w)
 
